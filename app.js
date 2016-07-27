@@ -5,7 +5,9 @@ $(document).ready(function() {
 var output;
 var counter;
 
-for (counter=0; counter <= 100; counter++) {
+var input = prompt("To what number should i count?");
+var output = parseInt(input);
+for (counter=0; counter <= output; counter++) {
 	if (counter%3==0 && counter%5==0) {
 		$(".list").append (
 			'<li>' + 'fizzbuzz' +'</li>'
